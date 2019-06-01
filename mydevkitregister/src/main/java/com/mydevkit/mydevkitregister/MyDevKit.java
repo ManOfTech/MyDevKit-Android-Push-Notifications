@@ -33,6 +33,6 @@ public class MyDevKit {
         json.put("application_key", application_key);
         json.put("device_token", device_token);
         String json_string = json.toString();
-        return post("https://api.mydevkit.io/api/v1/android/register", json_string, public_key);
+        return post("https://api.mydevkit.io/api/v1/register/android", json_string, public_key);
     }
 }
